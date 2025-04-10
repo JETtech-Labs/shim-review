@@ -47,7 +47,7 @@ Issuer: O=MyIssuer, Ltd., CN=MyIssuer EV Code Signing CA
 Subject: C=XX, O=MyCompany, Inc., CN=MyCompany, Inc.
 ```
 
-'''
+```
 Serial Number:
     28:cd:b5:b0:76:00:c3:9d:50:f8:e9:f1:1b:82:24:0d
 Signature Algorithm: sha256WithRSAEncryption
@@ -56,7 +56,7 @@ Validity
     Not Before: Apr  4 18:50:22 2025 GMT
     Not After : Mar 25 19:25:48 2028 GMT
 Subject: C = US, ST = California, L = Temecula, O = JET Technology Labs Inc., OU = Security, serialNumber = 5736907, CN = JET Technology Labs Inc., businessCategory = Private Organization, jurisdictionST = California, jurisdictionC = US
-'''
+```
 
 *******************************************************************************
 ### What product or service is this for?
@@ -330,18 +330,18 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
-'''
+```
 SHIM:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md.
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
 shim.jettech,1,JET Tech,shim,16.0-jettech,https://www.jettechlabs.com/
-'''
+```
 
-'''
+```
 GRUB2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,4,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
-'''
+```
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
