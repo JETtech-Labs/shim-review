@@ -27,7 +27,7 @@ COPY sbat.jettech.csv shim-review
 # COPY patches shim-review
 
 # download upstream traball
-ARG SHIM_VERSION=${SHIM_VERSION}
+ARG SHIM_VERSION=16.0
 ARG COMMIT_ID=18d98bfb34be583a5fe2987542e4b15e0db9cb61
 
 
