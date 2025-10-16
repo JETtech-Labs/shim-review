@@ -209,6 +209,7 @@ yes.
 The SBAT in our GRUB2 Binary is:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,4,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
+grub.jettech,1,JET Tech,grub,grub,2.12-jettech,https://www.gnu.org/software/grub/
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
@@ -295,7 +296,7 @@ N/A this is our first shim build.
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-sha256sum 22e6a7cd3d0851efb674920717fa551fe306b7427e7438850d1431d3cab91150 shimx64.efi
+sha256sum bcca9cb50250778b9709ec2f86b163e03bf1ee0bc4ec467102c54e060dde6c7b shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -332,7 +333,7 @@ Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` t
 *******************************************************************************
 ```
 SHIM:
-sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md.
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
 shim.jettech,1,JET Tech,shim,16.0-jettech,https://www.jettechlabs.com/
 ```
